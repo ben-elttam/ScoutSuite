@@ -1,0 +1,6 @@
+/venv-*
+/build/
+/dist/
+/ScoutSuite.egg-info/
+**/__pycache__/
+/venv*/
