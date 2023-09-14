@@ -1,6 +1,7 @@
 # virtualenv 
 env/
 venv/
+venv-*/
 
 # Compiled files
 *.py[cod]
