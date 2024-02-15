@@ -56,6 +56,8 @@ jobs:
           #   - Uses Default SBOM generator
           #   - Produces a 38MiB compact (1 line) JSON, 1.2M line when pretty printed
           #   - Too big to view with `docker buildx imagetools`, `docker manifest`, GGCR etc.
+          #   - Use: https://oci.dag.dev/?image=ghcr.io%2Fben-elttam%2Fscoutsuite%3Adevelop-latacora-berne
+          #     This will show truncated SBOM, whereas https://explore.ggcr.dev/ will get an error on a large SBOM.
           #   - Use `crane blob ghcr.io/ben-elttam/scoutsuite@sha256:<hash>` to download.
           #sbom: true
           # Use Docker Scout SBOM Generator
