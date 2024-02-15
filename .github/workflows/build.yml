@@ -52,7 +52,7 @@ jobs:
           context: .
           push: true
           provenance: true
-          # `sbom: true` is short for `attest: type=sbom`
+          # `sbom: true` is short for `attests: type=sbom`
           #   - Uses Default SBOM generator
           #   - Produces a 38MiB compact (1 line) JSON, 1.2M line when pretty printed
           #   - Too big to view with `docker buildx imagetools`, `docker manifest`, GGCR etc.
@@ -62,7 +62,7 @@ jobs:
           #   - Creates richer results
           #   - Ensures better compatibility with the Docker Scout image analysis
           #   - https://docs.docker.com/scout/sbom/#attest
-          attest: type=sbom,generator=docker/scout-sbom-indexer:latest
+          attests: type=sbom,generator=docker/scout-sbom-indexer:latest
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           annotations: |
