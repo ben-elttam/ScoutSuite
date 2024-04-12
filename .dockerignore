@@ -4,3 +4,4 @@
 /ScoutSuite.egg-info/
 **/__pycache__/
 /venv*/
+/sbom-via-crane*
