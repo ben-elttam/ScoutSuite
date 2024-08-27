@@ -1,6 +1,6 @@
-FROM python:3.11
+FROM python:3.12
 
-LABEL maintainer="Jason Ross <jason.ross@nccgroup.com>"
+LABEL maintainer="Jason Ross <algorythm@gmail.com>"
 
 ARG BUILD_DATE
 ARG NAME
@@ -13,7 +13,6 @@ ARG IMAGE_NAME
 
 ENV DEBIAN_FRONTEND=${DEBIAN_FRONTEND}
 ENV TERM=${TERM}
-ENV IBMCLOUD_COLOR=${IBMCLOUD_COLOR}
 
 # Build-time metadata as defined at http://label-schema.org
 LABEL \
