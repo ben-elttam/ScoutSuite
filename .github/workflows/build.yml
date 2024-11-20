@@ -5,7 +5,9 @@ on:
     tags:
       - 'v*'
     branches:
+      - develop-berne
       - develop-latacora-berne
+      - master-berne
 
 jobs:
   build:
